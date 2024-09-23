@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("img/netflix2024.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 80vh;
+    position: relative;
+
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 80vw;
+    height: 112px;
+}
+
+nav img {
+    color: rgb(206, 43, 43);
+    width: 185px;
+    position: relative;
+    z-index: 10;
+
+}
+
+nav button {
+    z-index: 10;
+    position: relative;
+    padding: 5px 25px;
+}
+
+.kalki {
+    height: calc(100% - 112px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    padding: 0 30px;
+    gap: 25px;
+}
+
+.kalki> :first-child {
+    font-weight: bolder;
+    font-size: 70px;
+    text-align: center;
+}
+
+.kalki> :nth-child(2) {
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+}
+
+.kalki> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.seperation {
+    height: 12px;
+    background-color: rgb(206, 43, 43);
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-weight: bolder;
+    font-size: 14px;
+    background-color: rgba(248, 243, 243, 0.104);
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 35px;
+    font-size: 24px;
+}
+
+.main input {
+    padding: 18px 230px 22px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    font-weight: bolder;
+    border: 2px solid rgba(23, 23, 23, 0.5), green, blue, alpha);
+}
+
+.btn-red-sem {
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+.kalki-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    align-items: center;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:1300px){
+    .first{flex:wrap;}
+
+}
+
+.firstimg {
+    position: relative;
+}
+
+.first img {
+    width: 500px;
+    position: relative;
+    z-index: 10;
+
+}
+
+.first video {
+
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width:500px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+    display: wrap;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+}
+
+.faqbox {
+    display: flex;
+    padding: 26px;
+    max-width: 60vw;
+    margin: 34px auto;
+    color: white;
+    background-color: rgba(158, 156, 156, 0.542);
+    justify-content: space-between;
+    font-family: 'poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 45px;
+    font-size: 24px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faqbox:hover {
+    background-color: rgba(54, 36, 36, 0.827);
+    color: white;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+    font-size: 28px;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .kalki> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .kalki> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .kalki> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .kalki-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 205px;
+    }
+}
+
+
+.footer a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
